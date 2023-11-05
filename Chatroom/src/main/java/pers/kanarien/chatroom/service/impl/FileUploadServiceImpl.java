@@ -1,5 +1,6 @@
 package pers.kanarien.chatroom.service.impl;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -36,6 +37,11 @@ public class FileUploadServiceImpl implements FileUploadService{
         String prefix = request.getSession().getServletContext().getRealPath("/") + FILE_STORE_PATH;
         System.out.println("存储路径为:" + prefix + "\\" + filename);
         Path filePath = Paths.get(prefix, filename);
+//        File uploadDir = new File(prefix);
+//        if (!uploadDir.exists()) {
+//            uploadDir.mkdirs();
+//        }
+
         try {
             Files.copy(file.getInputStream(), filePath);
         } catch (IOException e) {
