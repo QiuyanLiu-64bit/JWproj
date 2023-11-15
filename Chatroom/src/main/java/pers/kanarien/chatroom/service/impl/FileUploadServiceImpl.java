@@ -19,7 +19,7 @@ import pers.kanarien.chatroom.util.FileUtils;
 @Service
 public class FileUploadServiceImpl implements FileUploadService{
 
-    private final static String SERVER_URL_PREFIX = "http://localhost:8080/WebSocket/";
+    private final static String SERVER_URL_PREFIX = "http://140.210.212.154:8080/WebSocket/";
     private final static String FILE_STORE_PATH = "UploadFile";
     
     @Override

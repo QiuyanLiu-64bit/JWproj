@@ -14,6 +14,11 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.util.concurrent.Future;
 
 /**
+ * sudo systemctl stop tomcat9
+ * mvn clean package
+ * sudo systemctl start tomcat9
+ * sudo cp /root/JWproj/Chatroom/target/WebSocket.war /var/lib/tomcat9/webapps
+ * 
  * 描述: Netty WebSocket服务器
  *      使用独立的线程启动
  * @author Kanarien 
